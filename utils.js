@@ -47,10 +47,17 @@ function crearEstrategia(elemento){
     }else if(elemento==='preparado'){
         estrategia = {
             ejecutarAccionDeEstrategia: function (res) {
-                res.send({info:'Aang está preparado',img:'/images/aang_preparado.gif'});
+                res.send({info:'Lobo vasquez está preparado',img:'/images/preparado.jpg'});
+            }
+        }
+    }else if(elemento==='baile'){
+        estrategia = {
+            ejecutarAccionDeEstrategia: function (res) {
+                res.send({info:'Lobo Vasquez realizo ataque de baile',img:'/images/lobo_vasquez.gif'});
             }
         }
     }
+
     return estrategia;
 }
 
